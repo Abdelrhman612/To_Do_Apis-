@@ -100,7 +100,7 @@ exports.DeletTask = async (req, res) => {
   } catch (error) {
     res.status(500).json({
       success: false,
-      message: "An error occurred while deleting the task",
+      message: "Internal Server Error",
       error: error.message,
     });
   }
